@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:scaleType="fitXY"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:srcCompat="@drawable/coc_heroes" />
+
+    <LinearLayout
+        android:id="@+id/menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="20pt">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/you_blockhead"
+            android:textSize="40dp"
+            android:textColor="#15364D"
+            android:gravity="center"
+            android:text="Clash Defense"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Space
+            android:layout_width="1dp"
+            android:layout_height="175dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_height="1dp"
+                android:layout_width="50dp" />
+            <Button
+                android:id="@+id/button"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#379994"
+                android:fontFamily="@font/you_blockhead"
+                android:background="@drawable/rounded_rectangle"
+                android:text="Quit" />
+
+            <Space
+                android:layout_height="1dp"
+                android:layout_width="150dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/you_blockhead"
+                android:background="@drawable/rounded_rectangle"
+                android:backgroundTint="#379994"
+                android:text="Start" />
+
+            <Space
+                android:layout_height="1dp"
+                android:layout_width="50dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+
